@@ -8,3 +8,6 @@ y=$(($a*$b+$c))
 echo $y
 z=$(($c+$a/$b))
 echo $z
+p=$(($a%$b+$c))
+echo $p
+
