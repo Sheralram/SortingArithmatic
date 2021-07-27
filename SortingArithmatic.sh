@@ -6,3 +6,5 @@ x=$(($a+$b*$c))
 echo $x
 y=$(($a*$b+$c))
 echo $y
+z=$(($c+$a/$b))
+echo $z
