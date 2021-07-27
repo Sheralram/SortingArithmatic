@@ -4,3 +4,5 @@ read -p "Enter 3 inputs: " a b c
 
 x=$(($a+$b*$c))
 echo $x
+y=$(($a*$b+$c))
+echo $y
