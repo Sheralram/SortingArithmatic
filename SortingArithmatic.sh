@@ -31,7 +31,7 @@ do
 	for ((j=$((i + 1)); j<=${#arr_Result[@]} ; j++))
 	do
 		if [[ ${arr_Result[$i]} -lt ${arr_Result[$j]} ]]
-       		then
+      		then
                		tmp=${arr_Result[$i]}
                		arr_Result[$i]=${arr_Result[$j]}
                		arr_Result[$j]=$tmp
@@ -39,4 +39,11 @@ do
       	done
 done
 
-echo "${arr_Result[@]}"
+echo "The Result of every Computation in Descending Order : ${arr_Result[@]}"
+
+n=${#arr_Result[@]}
+for ((i=n-1; i>=0; i-- ))
+do
+echo "The Result of every Computation in Ascending order :${arr_Result[i]}"
+done
+
