@@ -12,6 +12,9 @@ echo $z
 p=$(($a%$b+$c))
 echo $p
 
-Results=" $x $y $z $p "
-echo "The Results of every Computation :" ${Results[@]}
+Results[0]=$x
+Results[1]=$y
+Results[2]=$z
+Results[3]=$p
 
+echo "The Results of every Computation in Dictionary :" ${Results[@]}
